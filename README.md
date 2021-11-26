@@ -6,4 +6,4 @@ Sistema de gestão de clientes.
 
 - Executar o comando `npm i` para instalar as dependências.
 
-- Executar o comando `npm run dev` para executar o servidor.
+- Executar o comando `npm run start` para executar o servidor.
