@@ -8,7 +8,11 @@ import {
 const db = getFirestore();
 
 $(document).ready(function () {
-  getDoc(doc(db, "clients", "zWerP4VCAzox6ZIq6Kqh")).then(function (cliente) {
+
+  const queryString = location.search;
+  const urlParams = new URLSearchParams(queryString);
+
+  getDoc(doc(db, "clients", urlParams.get("id"))).then(function (cliente) {
     console.log(cliente.data());
     $("#nomeC").val(cliente.data().nome);
     $("#emailC").val(cliente.data().email);
@@ -26,7 +30,7 @@ $(document).ready(function () {
   $("#form-edit-client").submit(function (e) {
     e.preventDefault();
 
-    updateDoc(doc(db, "clients", "zWerP4VCAzox6ZIq6Kqh"), {
+    updateDoc(doc(db, "clients", urlParams.get("id")), {
       nome: $("#nomeC").val(),
       email: $("#emailC").val(),
       telefone: $("#telefoneC").val(),
@@ -40,7 +44,7 @@ $(document).ready(function () {
       estado: $("#estadoC").val(),
     }).then(function (res) {
       console.log(res);
-      location.href = "ListarCliente.html";
+      location.href = "index.html";
     });
   });
 });
