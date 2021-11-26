@@ -16,13 +16,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adrianodev97/Sistema-Clientes---Crud.git"
+    "url": "git+https://github.com/adrianodev97/cadastro-clientes.git"
   },
   "keywords": [],
   "author": "Adriano",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/adrianodev97/Sistema-Clientes---Crud/issues"
+    "url": "https://github.com/adrianodev97/cadastro-clientes/issues"
   },
-  "homepage": "https://github.com/adrianodev97/Sistema-Clientes---Crud#readme"
+  "homepage": "https://github.com/adrianodev97/cadastro-clientes#readme"
 }
