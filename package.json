@@ -11,7 +11,7 @@
     "node": "14.x"
   },
   "scripts": {
-    "start": "http-server",
+    "start": "http-server -p $PORT -c1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
