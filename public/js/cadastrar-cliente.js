@@ -6,8 +6,6 @@ import {
 
 const db = getFirestore();
 
-// var formCadastro = document.querySelector("form-CadCliente");
-
 const pesquisarCep = (cep) => {
   return new Promise(function (resolve, reject) {
     var str = cep.replace(/[.]/, "");
@@ -47,9 +45,8 @@ $("#form-CadCliente").submit(function (event) {
       estado: $("#estado").val(),
     }).then(function (res) {
       console.log(res);
-      location.href = "ListarCliente.html";
+      location.href = "index.html";
     });
-    // console.log("Document written with ID: ", docRef.id);
   } catch (e) {
     console.error("Error adding document: ", e);
   }
