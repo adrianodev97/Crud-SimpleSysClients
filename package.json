@@ -1,0 +1,25 @@
+{
+  "name": "sistema-clientes---crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "http": "^0.0.1-security",
+    "http-server": "^14.0.0"
+  },
+  "scripts": {
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianodev97/Sistema-Clientes---Crud.git"
+  },
+  "keywords": [],
+  "author": "Adriano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrianodev97/Sistema-Clientes---Crud/issues"
+  },
+  "homepage": "https://github.com/adrianodev97/Sistema-Clientes---Crud#readme"
+}

@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+.clear{
+	clear: both;
+}
+
+.gradient {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle, rgb(2, 202, 102) 0%, rgb(3, 69, 155) 100%);
+}
+
+input, label {
+  display: block;
+  outline: none;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.container {
+  background-color: #FFF;
+  border-radius: 10px;
+  margin: auto;
+  width: 500px;
+}
+
+.container h2 {
+  margin-top: 20px;
+ text-align: center;
+}
+
+input {
+  border-bottom: 2px solid #323232;
+  padding: 3px;
+  margin-bottom: 30px;
+}
+
+input:focus {
+  border-color: #4fbd24;
+}
+
+.half-box {
+  width: 45%;
+  position: relative;
+  float: left;
+  margin: auto;
+}
+
+.full-box {
+  width: 95%;
+  position: relative;
+  margin: auto;
+}
+
+.half-box-button {
+  float: left;
+  width: 45%;
+  position: relative;
+  margin: auto;
+}
+
+.half-box-button button, .full-box button {
+  background-color: #1da52f;
+  border-radius: 15px;
+  width: 100%;
+  height: 25px;
+  margin-bottom: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.half-box-button .cancelar {
+  background-color: #c4394b;
+}
+
+.button-box {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.button-box button {
+  background-color: #1da52f;
+  border-radius: 15px;
+  width: 250px;
+  height: 25px;
+  margin-bottom: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.half-box-button button:hover, .button-box button:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.container-box {
+  background-color: #FFF;
+  border-radius: 10px;
+  width: 98%;
+  margin: auto;
+  padding: 20px;
+  height: auto;
+  margin-top: 15px;
+}
+ 
+.container-box h2 {
+  text-align: center;
+}
+
+.container-table {
+  overflow-x: scroll;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th {
+  background-color: #2a8d69;
+  color: white;
+}
+
+table th, td{
+  border: 1px solid black;
+}
+
+table tr:hover {
+  background-color: rgb(243, 228, 205);
+}
+
+.th-DNas{
+  width: 60px;
+}
+
+table td img {
+  width: 25px;
+}
+
+.center {
+  text-align: center;
+}

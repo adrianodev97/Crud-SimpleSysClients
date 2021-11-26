@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" c6ontent="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript" src="jquery/jquery.mask.min.js"></script> 
+
+    <script type="module" src="js/firebase.js"  crossorigin="anonymous"></script> 
+
+    <script type="module" src="js/listar-client.js"  crossorigin="anonymous"></script> 
+
+    <title>Tela de Cadastro</title>
+    <script>
+        $(document).ready(function(){
+            $("#telefone").mask("(00) 0000-00000")
+            $("#cep").mask("00.000-000")
+            $("#dataNasc").mask("00/00/0000")
+        })
+
+        
+    </script> 
+</head>
+<body class="gradient">
+    <div class="container-box">
+            <h2>Lista de Clientes Cadastrados</h2>
+        <div class="button-box">   
+            <button type="button" onclick="window.location.href='CadastrarCliente.html'">Cadastrar</button>
+        </div>
+        <div class="container-table">
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th class="th-DNas">Data de Nascimento</th>
+                    <th>CEP</th>
+                    <th>Rua</th>
+                    <th>Número</th>
+                    <th>Complemento</th>
+                    <th>Bairro</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
+                    <th>Ações</th>
+                </thead>
+                <tbody class="tbody" id="clients-table">
+                    <tr>
+                        <td>10</td>
+                        <td>Adriano Nascimento De Oliveira Junior</td>
+                        <td>adrianojuninho97@gmail.com</td>
+                        <td>(37)9912-26515</td>
+                        <td>18/11/1997</td>
+                        <td>35.501-172</td>
+                        <td>Rua Duarte</td>
+                        <td>523</td>
+                        <td>Apto 502</td>
+                        <td>Planalto</td>
+                        <td>Divinópolis</td>
+                        <td>Mg</td>
+                        <td>
+                            <a href="EditarCliente.html"><img src="images/edit.svg"></a>
+                            <img  src="images/delete.svg">
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>    
+</body>
+</html>

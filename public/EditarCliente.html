@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript" src="jquery/jquery.mask.min.js"></script> 
+
+    <script type="module" src="js/firebase.js"  crossorigin="anonymous"></script> 
+
+    <script type="module" src="js/editar-cliente.js"  crossorigin="anonymous"></script> 
+    <title>Editar Cliente</title>
+    <script>
+        $(document).ready(function(){
+        $("#telefoneC").mask("(00) 0000-00000")
+        $("#cepC").mask("00.000-000")
+        $("#dataNascC").mask("00/00/0000")
+    })
+    </script>
+</head>
+<body class="gradient">
+    <div class="container">
+        <h2>Editar de Cliente</h2>
+        <form method="get" id="form-edit-client">
+            <div class="full-box">
+                <label for="nomeC">Nome</label>
+                <input type="text" id="nomeC" placeholder="Digite o nome" >
+            </div>
+            <div class="full-box">
+                <label for="emailC">E-mail</label>
+                <input type="text" id="emailC" disabled>
+            </div>
+            <div class="half-box">
+                <label for="telefoneC">Telefone</label>
+                <input type="text" id="telefoneC" placeholder="(00)0000-0000" >
+            </div>
+            <div class="half-box">
+                <label for="dataNascC">Data de Nascimento</label>
+                <input type="text" id="dataNascC" placeholder="00/00/0000">
+            </div>
+            <div class="half-box">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" placeholder="Digite o CEP" value="" onblur="pesquisarCep(this.value)">
+            </div>
+            <div class="half-box">
+                <label for="ruaC">Rua</label>
+                <input type="text" id="ruaC" placeholder="Digite a rua" >
+            </div>
+            <div class="half-box">
+                <label for="numeroC">Número</label>
+                <input type="text" id="numeroC" placeholder="Digite o número" >
+            </div>
+            <div class="half-box">
+                <label for="complementoC">Complemento</label>
+                <input type="text" id="complementoC" placeholder="Digite o complemento">
+            </div>
+            <div class="full-box">
+                <label for="bairroC">Bairro</label>
+                <input type="text" id="bairroC" placeholder="Digite o bairro" >
+            </div>
+            <div class="half-box">
+                <label for="cidadeC">Cidade</label>
+                <input type="text" id="cidadeC" placeholder="Digite a cidade" >
+            </div>
+            <div class="half-box">
+                <label for="estadoC">Estado</label>
+                <input type="text" id="estadoC" placeholder="Digite o estado" >
+            </div>
+            <div class="half-box-button">
+                <button type="submit">Salvar</button>
+            </div>
+            <div class="half-box-button">
+                <button type="button" onclick="window.location.href='ListarCliente.html'" class="cancelar">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
