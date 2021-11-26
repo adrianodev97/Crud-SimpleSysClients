@@ -2,8 +2,8 @@
 
 Sistema de gestão de clientes.
 
-## Executar
+## Rodando o projeto localmente
 
 - Executar o comando `npm i` para instalar as dependências.
 
-- Executar o comando `npm http-server` para executar o servidor.
+- Executar o comando `npm run dev` para executar o servidor.
